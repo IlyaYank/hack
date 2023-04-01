@@ -1,0 +1,167 @@
+/* HEADER */
+.header {
+    position: relative;
+    background: url('../img/header_background.jpg') no-repeat;
+    height: 100vh;
+    background-size: cover;
+
+    &__nav {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &_logo {
+
+            img {
+                width: 100px;
+                border-radius: 50%;
+                box-shadow: 0 0 20px 0 #4AFF67;
+            }
+
+        }
+
+        &_menu {
+            &_list {}
+
+            &_item {
+                display: inline-block;
+                margin-left: 15px;
+                font-family: $font_family_1;
+                font-size: 40px;
+
+                &_a {
+                    display: inline-block;
+                    color: white;
+                    transition: all .5s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        text-shadow: 5px 0 5px #fff;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .img_hack {
+        background-image: url("../img/hacker1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 750px;
+        width: 850px;
+        z-index: 0;
+        position: absolute;
+        bottom: 0;
+        left: 480px;
+    }
+
+    .laptop {
+        color: #00FF97;
+
+        background-image: url("../img/laptop.png");
+        background-size: contain;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 750px;
+        z-index: 0;
+        position: absolute;
+        bottom: 0;
+        left: 760px;
+
+        &_align {
+            padding-top: 15%;
+            text-align: center;
+            font-family: $font_family_2;
+            text-shadow: -4px 4px 4px #3490DE;
+
+            h1 {
+                font-size: 90px;
+            }
+
+            h2 {
+                font-size: 72px;
+            }
+
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 1500px){
+    .header {
+        &__nav {    
+            &_logo {
+                img {
+                    width: 90px;
+                }
+            }
+            &_menu {
+                &_item {
+                    font-size: 30px;
+                }
+            }
+        }
+    
+        .img_hack {
+            height: 650px;
+            width: 750px;
+            left: 280px;
+        }
+    
+        .laptop {
+            height: 500px;
+            width: 750px;
+            left:560px;
+        }
+    }
+}
+
+@media(max-width: 1366px){
+    .header {
+        &__nav {    
+            &_logo {
+                img {
+                    width: 90px;
+                }
+            }
+            &_menu {
+                &_item {
+                    font-size: 30px;
+                }
+            }
+        }
+    
+        .img_hack {
+            height: 550px;
+            width: 650px;
+            left: 210px;
+        }
+    
+        .laptop {
+            height: 400px;
+            width: 600px;
+            left:410px;
+            &_align {
+                padding-top: 10%;
+                h1 {
+                    font-size: 80px;
+                }
+    
+                h2 {
+                    font-size: 62px;
+                }
+    
+                h3 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
